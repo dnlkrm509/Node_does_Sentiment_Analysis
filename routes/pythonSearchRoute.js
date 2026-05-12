@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
     try {
 
         const response = await axios.post(
-            "http://127.0.0.1:8000/search",
+            "https://python-rag-semantic-search-pdf.onrender.com/search",
             {
                 question: req.body.question
             }
