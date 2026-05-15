@@ -11,6 +11,9 @@ router.post("/", async (req, res) => {
             "https://python-rag-semantic-search-pdf.onrender.com/search",
             {
                 question: req.body.question
+            },
+            {
+                timeout: 120000
             }
         );
 
